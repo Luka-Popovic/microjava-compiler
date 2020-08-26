@@ -1,0 +1,143 @@
+INFO  13:55:30,877 - Compiling source file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\test5.mj
+INFO  13:55:31,002 - #6 program
+INFO  13:55:31,002 - #42 Program
+INFO  13:55:31,002 - #42 int
+INFO  13:55:31,002 - #42 ab
+INFO  13:55:31,002 - #5 ,
+INFO  13:55:31,002 - #42 ac
+INFO  13:55:31,002 - #5 ,
+INFO  13:55:31,002 - #42 ad
+INFO  13:55:31,002 - #36 ;
+INFO  13:55:31,018 - #44 class
+INFO  13:55:31,018 - #42 A
+INFO  13:55:31,018 - #7 {
+INFO  13:55:31,018 - #42 int
+INFO  13:55:31,018 - #42 x
+INFO  13:55:31,018 - #5 ,
+INFO  13:55:31,018 - #42 y
+INFO  13:55:31,018 - #5 ,
+INFO  13:55:31,018 - #42 z
+INFO  13:55:31,018 - #36 ;
+INFO  13:55:31,018 - #7 {
+INFO  13:55:31,018 - #13 void
+INFO  13:55:31,018 - #42 a_meth
+INFO  13:55:31,018 - #2 (
+INFO  13:55:31,018 - #3 )
+INFO  13:55:31,018 - #7 {
+INFO  13:55:31,018 - #18 print
+INFO  13:55:31,034 - #2 (
+INFO  13:55:31,034 - #41 4
+INFO  13:55:31,034 - #3 )
+INFO  13:55:31,034 - #36 ;
+INFO  13:55:31,034 - #8 }
+INFO  13:55:31,034 - #13 void
+INFO  13:55:31,034 - #42 b_meth
+INFO  13:55:31,034 - #2 (
+INFO  13:55:31,034 - #3 )
+INFO  13:55:31,034 - #7 {
+INFO  13:55:31,034 - #18 print
+INFO  13:55:31,034 - #2 (
+INFO  13:55:31,034 - #41 7
+INFO  13:55:31,034 - #3 )
+INFO  13:55:31,034 - #36 ;
+INFO  13:55:31,034 - #8 }
+INFO  13:55:31,034 - #8 }
+INFO  13:55:31,034 - #8 }
+INFO  13:55:31,034 - #44 class
+INFO  13:55:31,034 - #42 B
+INFO  13:55:31,034 - #12 extends
+INFO  13:55:31,034 - #42 A
+INFO  13:55:31,034 - #7 {
+INFO  13:55:31,034 - #42 int
+INFO  13:55:31,034 - #42 m
+INFO  13:55:31,034 - #5 ,
+INFO  13:55:31,034 - #42 n
+INFO  13:55:31,034 - #36 ;
+INFO  13:55:31,034 - #7 {
+INFO  13:55:31,034 - #13 void
+INFO  13:55:31,034 - #42 bb_meth
+INFO  13:55:31,034 - #2 (
+INFO  13:55:31,034 - #3 )
+INFO  13:55:31,034 - #7 {
+INFO  13:55:31,034 - #18 print
+INFO  13:55:31,034 - #2 (
+INFO  13:55:31,034 - #41 1
+INFO  13:55:31,034 - #3 )
+INFO  13:55:31,034 - #36 ;
+INFO  13:55:31,034 - #8 }
+INFO  13:55:31,034 - #8 }
+INFO  13:55:31,034 - #8 }
+INFO  13:55:31,034 - #7 {
+INFO  13:55:31,034 - #13 void
+INFO  13:55:31,034 - #42 main
+INFO  13:55:31,034 - #2 (
+INFO  13:55:31,034 - #3 )
+INFO  13:55:31,034 - #42 B
+INFO  13:55:31,034 - #42 b
+INFO  13:55:31,034 - #36 ;
+INFO  13:55:31,034 - #7 {
+INFO  13:55:31,034 - #42 b
+INFO  13:55:31,034 - #17 =
+INFO  13:55:31,034 - #16 new
+INFO  13:55:31,034 - #42 B
+INFO  13:55:31,034 - #36 ;
+INFO  13:55:31,034 - #42 b
+INFO  13:55:31,034 - #28 .
+INFO  13:55:31,034 - #42 y
+INFO  13:55:31,049 - #17 =
+INFO  13:55:31,049 - #41 2
+INFO  13:55:31,049 - #36 ;
+INFO  13:55:31,049 - #18 print
+INFO  13:55:31,049 - #2 (
+INFO  13:55:31,049 - #42 b
+INFO  13:55:31,049 - #28 .
+INFO  13:55:31,049 - #42 y
+INFO  13:55:31,049 - #3 )
+INFO  13:55:31,049 - #36 ;
+INFO  13:55:31,049 - #42 b
+INFO  13:55:31,049 - #28 .
+INFO  13:55:31,049 - #42 a_meth
+INFO  13:55:31,049 - #2 (
+INFO  13:55:31,049 - #3 )
+INFO  13:55:31,049 - #36 ;
+INFO  13:55:31,049 - #42 b
+INFO  13:55:31,049 - #28 .
+INFO  13:55:31,049 - #42 bb_meth
+INFO  13:55:31,049 - #2 (
+INFO  13:55:31,049 - #3 )
+INFO  13:55:31,049 - #36 ;
+INFO  13:55:31,049 - #42 b
+INFO  13:55:31,049 - #28 .
+INFO  13:55:31,049 - #42 b_meth
+INFO  13:55:31,049 - #2 (
+INFO  13:55:31,049 - #3 )
+INFO  13:55:31,049 - #36 ;
+INFO  13:55:31,049 - #8 }
+INFO  13:55:31,049 - #8 }
+INFO  13:55:31,065 - Deklarisana promenljiva ab na liniji 2
+INFO  13:55:31,065 - Deklarisana promenljiva ac na liniji 5
+INFO  13:55:31,065 - Deklarisana promenljiva ad na liniji 2
+INFO  13:55:31,065 - Deklarisana klasa A na liniji 3
+INFO  13:55:31,065 - Deklarisana klasna promenljiva x na liniji 4
+INFO  13:55:31,065 - Deklarisana klasna promenljiva y na liniji 6
+INFO  13:55:31,065 - Deklarisana klasna promenljiva z na liniji 4
+INFO  13:55:31,065 - Obradjuje se funkcija a_meth ciji je povratni tip  void, na liniji 6
+INFO  13:55:31,065 - Obradjuje se funkcija b_meth ciji je povratni tip  void, na liniji 9
+INFO  13:55:31,065 - Deklarisana klasa B na liniji 14
+INFO  13:55:31,065 - Deklarisana klasna promenljiva m na liniji 15
+INFO  13:55:31,065 - Deklarisana klasna promenljiva n na liniji 15
+INFO  13:55:31,065 - Obradjuje se funkcija bb_meth ciji je povratni tip  void, na liniji 17
+INFO  13:55:31,065 - Obradjuje se funkcija main ciji je povratni tip  void, na liniji 25
+INFO  13:55:31,065 - Deklarisana promenljiva b na liniji 25
+INFO  13:55:31,065 - Pretraga na liniji 27 (b), nadjeno Var b: Class, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 28 (b), nadjeno Var b: Class, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 29 (b), nadjeno Var b: Class, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 30 (b), nadjeno Var b: Class, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 30 (a_meth), nadjeno Meth a_meth: bool, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 31 (b), nadjeno Var b: Class, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 31 (bb_meth), nadjeno Meth bb_meth: bool, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 32 (b), nadjeno Var b: Class, 0, 1 
+INFO  13:55:31,065 - Pretraga na liniji 32 (b_meth), nadjeno Meth b_meth: bool, 0, 1 
+INFO  13:55:31,065 - Print calls = 0
+INFO  13:55:31,065 - Generating bytecode file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\izlaz.obj
+INFO  13:55:31,080 - Parsiranje uspesno zavrseno!

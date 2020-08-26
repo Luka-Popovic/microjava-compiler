@@ -1,0 +1,47 @@
+program Test1
+	int x;
+	const int temp = 7;
+
+	class A
+	{
+	 char tip;
+	 int vrednost;
+	 {
+		int izracunaj()
+			int c, i, rezultat;
+	 	{ 
+	 		c = 0;
+	 		rezultat = 0;
+			i=1;
+			do
+			{
+				x++;
+				i++;
+				c = c + (x % i);
+				if( c >= x )
+				{
+					rezultat++;
+				}
+	 		}while(i < temp);
+		return x;
+	 	}
+
+	void postavitVrednost(int vr)
+	{
+		vrednost = vr;	
+	}
+}
+}
+{
+	void main() A a;{
+		a = new A;
+		x = 0;
+		print(x);
+		print(a.vrednost);
+		//print(a.izracunaj());
+		//a.postaviVrednost(4);
+		a.vrednost = 10;
+		print(a.vrednost);
+		
+	}
+}

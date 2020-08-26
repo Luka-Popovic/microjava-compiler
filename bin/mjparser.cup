@@ -1,0 +1,380 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import rs.ac.bg.etf.pp1.ast.*;
+import org.apache.log4j.*;
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal LPARENT, RPARENT, READ, COMMA, PROG, L_BRACE, R_BRACE, CONST, L_SQUARE_PARENT, R_SQUARE_PARENT, EXTENDS ;
+terminal VOID, INCREMENT, DECREMENT, NEW, EQUAL, PRINT, PLUS, MINUS, MUL, DIV, MOD ;
+terminal LOGICAL_AND, LOGICAL_OR, ELSE, IF, DOT, LOWER, LOWER_EQUAL, BREAK, GREATER, WHILE, NOT_BIN_EQUAL, GREATER_EQUAL ;
+terminal SEMI_COMMA, DO, BIN_EQUAL, RETURN, CONTINUE ; 
+terminal Integer NUM_CONST ;
+terminal String IDENT ;
+terminal String CHAR_CONST ;
+terminal String CLASS;
+terminal Boolean  BOOL_CONST;
+
+nonterminal PotentialNumber, ConstDeclList, ConstDecl, ConstDeclParam, ConstList ;
+nonterminal VarDeclList, VarDecl, VarDeclParam, ClassDeclList, PotentialExtend, MethodDeclList ;
+nonterminal FormalPars, FormalParamList, FormalParamDecl, StatementList, Statement;
+nonterminal Addop, Mulop, MethodDeclParam, ActPars, Relop, CondTermLogicalAnd, CondTermLogicalOr;
+nonterminal Condition, CondTerm, DoStatement, VarDeclParamClass, IfBothPart, DoMathcPart, ClassDeclFirstPart;
+nonterminal Matched, Unmatched , VarTypeName, ConstTypeName, FormalParamName, ActualParamList, TermMulop;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, ClassDeclName, MethodDecl, MethodDeclName, VoidType, DesignatorDot, CondFact, DesignatorStatement, DesignatorArr, ConstDeclarIdent; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, ExprList, PotentialExpr, ConstTypeList, TermMul, ExprAdd; 
+
+//java.lang.string
+
+Program ::= (Program) PROG ProgName:p ConstDeclList L_BRACE MethodDeclList R_BRACE ;
+
+ProgName ::= (ProgName) IDENT:pName ;
+
+ConstDeclList ::= (ConstDeclarationList) ConstDeclList ConstList
+				  |
+				  (NoConstDeclarationList) /* epsilon */
+				  ;
+
+ConstList ::= (ConstListConstDecl) ConstDecl
+			  |
+			  (ConstListVarDecl) VarDeclList
+			  |
+			  (ConstListClasstDecl) ClassDeclList
+			  ;
+
+ConstDecl ::= (ConstDeclaration) CONST ConstTypeName EQUAL ConstTypeList ConstDeclParam SEMI_COMMA ;
+
+ConstTypeName ::= (ConstTypeName) Type:constType IDENT:constName ;
+
+ConstDeclParam ::= (ConstDeclarationParam) ConstDeclParam ConstDeclarIdent ConstTypeList
+				   | 
+				   (NoConstDeclarationParam) /* epsilon */
+					|
+				   (ConstDeclParamErrorComma) error COMMA
+					|
+				   (ConstDeclParamErrorSemiComma) error SEMI_COMMA
+					;
+ConstDeclarIdent ::= (ConstDeclrIdent) COMMA IDENT:ConstDeclParamName EQUAL;
+
+ConstTypeList ::= (NumberConst) NUM_CONST
+				  |
+				  (BooleanConst) BOOL_CONST
+				  |
+				  (CharConst) CHAR_CONST
+				  ;
+
+VarDeclParam ::= (VarDeclarationParam) VarDeclParam VarDeclList
+				 |
+				 (NoVarDeclarationParam) /* epsilon */
+				 ;
+				  
+VarDeclList ::= (VarDeclarationList) VarTypeName VarDecl SEMI_COMMA
+				|
+				(VarDeclarationListError) error SEMI_COMMA
+				{: parser.report_info("Uspesno izvrsen oporavak od greske do ; koji je nastao zbog greske pri definisanju promenljive",null); :}			
+				;
+
+VarTypeName ::= (VarTypeNameSqParent) Type:varType IDENT:varName L_SQUARE_PARENT R_SQUARE_PARENT 
+				|
+				(VarTypeNameNoSqParent) Type:varType IDENT:varName  
+				;	
+				
+VarDecl ::= (VarDeclarationSqParent) VarDecl COMMA IDENT:VarDeclName L_SQUARE_PARENT R_SQUARE_PARENT
+			|
+			(VarDeclarationNoSqParent) VarDecl COMMA IDENT:VarDeclName
+			|
+			(NoVarDeclaration) /* epsilon */
+			|
+			(VarDeclarationCommaError) error
+			{: parser.report_info("Uspesno izvrsen oporavak od greske koji je nastao zbog greske pri definisanju promenljive",null); :}			
+			; 
+				
+ClassDeclList ::= (ClassDeclarationList) ClassDeclFirstPart L_BRACE VarDeclParamClass MethodDeclParam R_BRACE
+					;
+
+ClassDeclFirstPart ::= (ClassDeclarationFirstPart) ClassDeclName PotentialExtend;
+					
+ClassDeclName ::= (ClassDeclName) CLASS:classType IDENT:className ;
+
+VarDeclParamClass ::= (VarDClass) VarDeclParam
+					  ;
+
+PotentialExtend ::= (PotentialExtends) EXTENDS Type:typeName
+					|
+					(NoPotentialExtends) /* epsilon */
+					;
+
+MethodDeclParam ::= (MethodDeclarationParam) L_BRACE MethodDeclList R_BRACE
+					|
+					(NoMethodDeclarationParam) /* epsilon */
+					;
+
+MethodDeclList ::= (MethodDeclarationList) MethodDeclList MethodDecl
+					|
+					(NoMethodDeclarationList) /* epsilon */
+					;
+					
+MethodDecl ::= (MethodDeclaration) MethodDeclName LPARENT FormalPars RPARENT VarDeclParam L_BRACE StatementList R_BRACE
+					|
+			   (MethodDeclarationVoid) VoidType LPARENT FormalPars RPARENT VarDeclParam L_BRACE StatementList R_BRACE
+			   		|
+			   (MethodDeclError) error RPARENT
+					;
+					
+MethodDeclName ::= (MethodDeclName) Type:chType IDENT:methName 
+					;
+				
+VoidType ::= (VoidType) VOID IDENT:voidMethName;				
+				
+FormalPars ::= (FormalParameters) FormalParamList
+				|
+			   (NoFormalParameters) /* epsilon */
+					;				
+
+FormalParamList ::= (FormalParameterList) FormalParamList COMMA FormalParamDecl				
+					|
+					(SingleFormalParameterList) FormalParamDecl
+					|
+					(FormalParamListErrorComma) error COMMA
+					;
+
+FormalParamDecl ::= (FormalParameterDeclaration) FormalParamName
+					;
+
+FormalParamName ::= (FormalParamNameSqParent) Type:fpType IDENT:fpName L_SQUARE_PARENT R_SQUARE_PARENT
+					|
+					(FormalParamNameNoSqParent) Type:fpType IDENT:fpName 
+					;  	
+
+Type ::= (Type) IDENT:typeName;						  		
+				
+StatementList ::= (StatementLists) StatementList Statement
+				  |
+				  (NoStatementLists) /* epsilon */
+				  ;				
+Statement ::= (MatchedStmt) Matched | (UnmachedStmt) Unmatched ;
+
+Unmatched ::= (UnmatchedIf) DoMathcPart Statement 
+				| 
+			  (UnmatchedIfElse) IfBothPart Unmatched
+				|
+			  (UnmatchedIfError) IF LPARENT error RPARENT
+		      ;
+IfBothPart ::= (IfPart) DoMathcPart Matched ELSE;
+DoMathcPart ::= (ThenPart) IF LPARENT Condition RPARENT;
+
+Matched ::= (Assignment) DesignatorStatement SEMI_COMMA
+			 /* | Izbacio sam ovaj deo jer se dobija preko DesignatorStatement-a i ako ga ostavim pravi konflikt
+			  Designator LPARENT RPARENT SEMI_COMMA
+			  */
+			  |
+			  (MatchedIf) IfBothPart Matched
+			  |
+			  (MatchedIfError) LPARENT error RPARENT
+			  |
+			  (ReadStmt) READ LPARENT Designator RPARENT SEMI_COMMA
+			  |
+			  (PrintStmt) PRINT LPARENT Expr:exp PotentialNumber RPARENT SEMI_COMMA
+			  |
+			  (Statements) L_BRACE StatementList R_BRACE
+			  |
+			  (BreakExpr) BREAK SEMI_COMMA
+			  |
+			  (ContinueExpr) CONTINUE SEMI_COMMA
+			  |
+			  (NoReturnExpr) RETURN SEMI_COMMA
+			  |
+			  (ReturnExpr) RETURN Expr SEMI_COMMA
+			  |
+			  (DoWhileExpr) DoStatement Statement WHILE LPARENT Condition RPARENT SEMI_COMMA
+			  |
+			 (ErrAssignment) error SEMI_COMMA
+			 {: parser.report_info("Uspesno izvrsen oporavak od greske do ; koji je nastao zbog greske pri pisanju izraza dodele vrednosti",null); :}
+			  	 /*:l, jel sme ovo l da se koristi u ast_cup
+			  {: parser.report_error("Izvrsen oporavak do ; u liniji "+lleft,null); :}
+			  */;
+
+DoStatement ::= (DoStmt) DO;			  
+PotentialNumber ::= (PotentialNumbers) COMMA NUM_CONST
+					|
+					(NoPotentialNumbers) /* epsilon */
+					;  	
+					
+
+					
+DesignatorStatement	::= (DesignatorStatementAssignment) Designator EQUAL Expr
+						|
+						(DesignatorStatementInc) Designator INCREMENT
+						| 
+						(DesignatorStatementDec) Designator DECREMENT
+						|
+						(DesignatorStatementProcCall) Designator LPARENT ActPars RPARENT
+						;
+
+Designator ::= (DesignatorDotIdent) DesignatorDot IDENT:field
+				|
+			   (DesignatorExpr) DesignatorArr L_SQUARE_PARENT Expr R_SQUARE_PARENT
+				|
+			   (DesignatorIdent) IDENT:dName 
+				;
+
+DesignatorArr ::= (DesignatorArray) Designator;
+
+
+DesignatorDot ::= (DesignatorDots) DesignatorDot IDENT:field DOT 
+				  |
+				  (SingleDesignatorDot) IDENT:field DOT 
+				  |
+				  (SingleDesignatorExprArray) DesignatorArr L_SQUARE_PARENT Expr R_SQUARE_PARENT DOT
+				  ;
+
+Expr ::= (ExprLists) ExprList Term
+		 |
+		 (SingleExpr) Term
+		 |
+		 (SingleExprMinus) MINUS Term
+		 ;
+
+ExprAdd ::= (ExprAddOpOperation) ExprList Term; 
+
+ExprList ::= (ExprAddop) ExprAdd Addop
+			 |
+			 (ExprTermMinus) MINUS Term Addop
+			 |
+			 (ExprTerm) Term Addop
+			 ; 
+				   
+Term ::= (TermList) TermMulop Factor:fact
+		 |
+		 (SingleTerm) Factor
+		 ;		
+
+TermMulop ::= (FactorMulop) TermMul Mulop
+			  |
+			  (TermFact) Factor:fact Mulop
+			  ;		 
+
+TermMul ::=	(TermMulOperation) TermMulop Factor:fact ;		 		 
+		 
+Addop ::= (Plus) PLUS
+          |
+          (Minus) MINUS
+          ;
+          
+ Mulop ::= (Mul) MUL
+ 		   |
+ 		   (Div) DIV
+ 		   |
+ 		   (Mod) MOD
+ 		   ;
+ 		   
+Factor ::= (FactorNumberConst) NUM_CONST
+		   |
+		   (FactorCharConst) CHAR_CONST
+		   |
+		   (FactorExpr) LPARENT Expr RPARENT
+		   |
+		   (FactorBooleanConst) BOOL_CONST
+		   |
+		   (FactorNewType) NEW Type:type
+		   |
+		   (FactorNewTypeWithExpr) NEW Type:type L_SQUARE_PARENT PotentialExpr R_SQUARE_PARENT
+		   |
+		   (Var) Designator:d
+		   |
+		   (FuncCall) Designator LPARENT ActPars RPARENT
+		   ;  
+
+PotentialExpr ::= (WithExpr) Expr
+				  |
+				  (WithNoExpr)/*epsilon*/
+				  ;
+
+ActPars ::= (Actuals) ActualParamList 
+			| 
+			(NoActuals) /* epsilon */ 
+			   ;
+		             
+ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
+			|
+			(ActualParam) Expr
+			;		             
+		     
+Condition ::= (Conditions) CondTermLogicalOr CondTerm 
+			  |
+			  (SingleCondition) CondTerm
+			  ;	
+
+CondTermLogicalOr ::= (CondTermOr) Condition LOGICAL_OR ;
+			 
+CondTerm ::= (ConditionTerms) CondTermLogicalAnd CondFact
+			 |
+			 (ConditionTerm) CondFact
+			 ;
+
+CondTermLogicalAnd ::= (CondTermAnd) CondTerm LOGICAL_AND ;
+	 
+CondFact ::= (ConditionFactor) Expr:e
+			 |
+			 (ConditionFactors) Expr:e1 Relop Expr:e2
+			 ;
+			 
+Relop ::= (BinEquality) BIN_EQUAL
+		  |
+		  (NotBinEquality) NOT_BIN_EQUAL
+		  |
+		  (GreaterRelOp) GREATER
+		  |
+		  (GreaterEqualRelOp) GREATER_EQUAL
+		  |
+		  (LowerRelOp) LOWER
+		  |
+		  (LowerEqualRelOp)LOWER_EQUAL
+		  ;				 			 	             		 	   

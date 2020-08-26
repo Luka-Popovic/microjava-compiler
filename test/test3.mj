@@ -1,0 +1,38 @@
+program MJProgram
+	int x+; int y, z[], q, p;
+	char h[];
+	{
+	
+	int k(int a, int b) int x; {
+		x = a + 10;
+		print(x);
+		print(b);
+		
+		return 0;
+	}
+	
+	
+	int main() {
+		x=*1;
+		y=2;
+		q= 4;
+		p = 0;
+		if(x<y && 1<2 || 1>0) 
+			if(x>q && 1<2 || 1<0) p = 1;
+		 else 
+		 	if(x<y && 1<2 || 1>0) p = 2; 
+		 		else p = 3;
+		z = new int [2];
+		
+		z[0] = 4;
+		print(z[0]);
+		z[0]++;
+		
+		print(z[0]);
+		print(p);
+		
+		if(x;7) print(1);
+		
+		return 0;
+	}
+}

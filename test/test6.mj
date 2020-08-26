@@ -1,0 +1,40 @@
+program MJProgram
+	int x; int y;
+	const int max = 8;
+	char z[];
+	{
+	
+	int stampaj(){
+		print(x);
+		print(y);
+		
+		return 0;
+	}
+	
+	
+	int main() int i; {
+		x = 3;
+		y = 2;
+		stampaj();
+		i = 0;
+		do{
+		x++;
+		y++;
+		if(i%2 == 0){
+		stampaj();
+		}
+		i++;
+		}while(i<max);
+		
+		z = new char[9];
+		z[0] = 'd'; z[1] = 'o'; z[2] = 'b'; z[3] = 'a'; z[4] = 'r'; z[5] = ' '; z[6] = 'd'; z[7] = 'a'; z[8] = 'n';
+		print(eol);
+		i=0;
+		do{
+			print(z[i],1);
+			i++;
+		}while(i<9);
+		
+		return 0;
+	}
+}

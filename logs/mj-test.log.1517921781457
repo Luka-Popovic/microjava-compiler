@@ -1,0 +1,171 @@
+INFO  13:56:02,387 - Compiling source file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\test7.mj
+INFO  13:56:02,497 - #6 program
+INFO  13:56:02,497 - #42 MJProgram
+INFO  13:56:02,497 - #42 int
+INFO  13:56:02,512 - #42 x
+INFO  13:56:02,512 - #36 ;
+INFO  13:56:02,512 - #42 int
+INFO  13:56:02,512 - #42 y
+INFO  13:56:02,512 - #5 ,
+INFO  13:56:02,512 - #42 z
+INFO  13:56:02,512 - #10 [
+INFO  13:56:02,512 - #11 ]
+INFO  13:56:02,512 - #5 ,
+INFO  13:56:02,512 - #42 q
+INFO  13:56:02,512 - #5 ,
+INFO  13:56:02,512 - #42 p
+INFO  13:56:02,512 - #36 ;
+INFO  13:56:02,512 - #42 char
+INFO  13:56:02,512 - #42 h
+INFO  13:56:02,512 - #10 [
+INFO  13:56:02,512 - #11 ]
+INFO  13:56:02,512 - #36 ;
+INFO  13:56:02,512 - #7 {
+INFO  13:56:02,528 - #42 int
+INFO  13:56:02,528 - #42 main
+INFO  13:56:02,528 - #2 (
+INFO  13:56:02,528 - #3 )
+INFO  13:56:02,528 - #7 {
+INFO  13:56:02,528 - #42 x
+INFO  13:56:02,528 - #17 =
+INFO  13:56:02,528 - #41 0
+INFO  13:56:02,528 - #36 ;
+INFO  13:56:02,528 - #42 y
+INFO  13:56:02,528 - #17 =
+INFO  13:56:02,528 - #41 0
+INFO  13:56:02,528 - #36 ;
+INFO  13:56:02,528 - #42 q
+INFO  13:56:02,528 - #17 =
+INFO  13:56:02,528 - #41 10
+INFO  13:56:02,528 - #36 ;
+INFO  13:56:02,528 - #42 p
+INFO  13:56:02,528 - #17 =
+INFO  13:56:02,528 - #41 0
+INFO  13:56:02,528 - #36 ;
+INFO  13:56:02,528 - #42 y
+INFO  13:56:02,544 - #14 ++
+INFO  13:56:02,544 - #36 ;
+INFO  13:56:02,544 - #37 do
+INFO  13:56:02,544 - #7 {
+INFO  13:56:02,544 - #27 if
+INFO  13:56:02,544 - #2 (
+INFO  13:56:02,544 - #42 y
+INFO  13:56:02,544 - #38 ==
+INFO  13:56:02,544 - #41 2
+INFO  13:56:02,544 - #3 )
+INFO  13:56:02,544 - #7 {
+INFO  13:56:02,544 - #42 y
+INFO  13:56:02,544 - #14 ++
+INFO  13:56:02,544 - #36 ;
+INFO  13:56:02,544 - #31 break
+INFO  13:56:02,544 - #36 ;
+INFO  13:56:02,544 - #18 print
+INFO  13:56:02,544 - #2 (
+INFO  13:56:02,544 - #43 'a'
+INFO  13:56:02,544 - #3 )
+INFO  13:56:02,544 - #36 ;
+INFO  13:56:02,544 - #8 }
+INFO  13:56:02,544 - #18 print
+INFO  13:56:02,544 - #2 (
+INFO  13:56:02,544 - #42 y
+INFO  13:56:02,544 - #3 )
+INFO  13:56:02,544 - #36 ;
+INFO  13:56:02,544 - #42 y
+INFO  13:56:02,544 - #14 ++
+INFO  13:56:02,544 - #36 ;
+INFO  13:56:02,544 - #8 }
+INFO  13:56:02,544 - #33 while
+INFO  13:56:02,544 - #2 (
+INFO  13:56:02,544 - #42 y
+INFO  13:56:02,544 - #29 <
+INFO  13:56:02,544 - #41 4
+INFO  13:56:02,559 - #24 &&
+INFO  13:56:02,559 - #41 2
+INFO  13:56:02,559 - #29 <
+INFO  13:56:02,559 - #41 6
+INFO  13:56:02,559 - #25 ||
+INFO  13:56:02,559 - #42 y
+INFO  13:56:02,559 - #29 <
+INFO  13:56:02,559 - #41 9
+INFO  13:56:02,559 - #3 )
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #37 do
+INFO  13:56:02,559 - #7 {
+INFO  13:56:02,559 - #37 do
+INFO  13:56:02,559 - #7 {
+INFO  13:56:02,559 - #18 print
+INFO  13:56:02,559 - #2 (
+INFO  13:56:02,559 - #43 'a'
+INFO  13:56:02,559 - #3 )
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #42 x
+INFO  13:56:02,559 - #14 ++
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #8 }
+INFO  13:56:02,559 - #33 while
+INFO  13:56:02,559 - #2 (
+INFO  13:56:02,559 - #42 x
+INFO  13:56:02,559 - #29 <
+INFO  13:56:02,559 - #41 2
+INFO  13:56:02,559 - #3 )
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #42 x
+INFO  13:56:02,559 - #17 =
+INFO  13:56:02,559 - #41 0
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #18 print
+INFO  13:56:02,559 - #2 (
+INFO  13:56:02,559 - #42 y
+INFO  13:56:02,559 - #3 )
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #42 y
+INFO  13:56:02,559 - #14 ++
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #31 break
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #8 }
+INFO  13:56:02,559 - #33 while
+INFO  13:56:02,559 - #2 (
+INFO  13:56:02,559 - #42 y
+INFO  13:56:02,559 - #29 <
+INFO  13:56:02,559 - #41 4
+INFO  13:56:02,559 - #3 )
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #18 print
+INFO  13:56:02,559 - #2 (
+INFO  13:56:02,559 - #42 p
+INFO  13:56:02,559 - #3 )
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #39 return
+INFO  13:56:02,559 - #41 0
+INFO  13:56:02,559 - #36 ;
+INFO  13:56:02,559 - #8 }
+INFO  13:56:02,559 - #8 }
+INFO  13:56:02,591 - Deklarisana promenljiva x na liniji 2
+INFO  13:56:02,591 - Deklarisana promenljiva y na liniji 2
+INFO  13:56:02,591 - Deklarisana nizovna promenljiva z gde su elementi niza tipa int, na liniji 12
+INFO  13:56:02,591 - Deklarisana promenljiva q na liniji 12
+INFO  13:56:02,591 - Deklarisana promenljiva p na liniji 2
+INFO  13:56:02,591 - Deklarisana nizovna promenljiva h gde su elementi niza tipa char, na liniji 3
+INFO  13:56:02,591 - Obradjuje se funkcija main ciji je povratni tip int, na liniji 6
+INFO  13:56:02,591 - Pretraga na liniji 7 (x), nadjeno Var x: int, 0, 0 
+INFO  13:56:02,591 - Pretraga na liniji 8 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 9 (q), nadjeno Var q: int, 3, 0 
+INFO  13:56:02,591 - Pretraga na liniji 10 (p), nadjeno Var p: int, 4, 0 
+INFO  13:56:02,591 - Pretraga na liniji 11 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 12 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 12 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 12 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 12 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 12 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 12 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 14 (x), nadjeno Var x: int, 0, 0 
+INFO  13:56:02,591 - Pretraga na liniji 14 (x), nadjeno Var x: int, 0, 0 
+INFO  13:56:02,591 - Pretraga na liniji 14 (x), nadjeno Var x: int, 0, 0 
+INFO  13:56:02,591 - Pretraga na liniji 14 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 14 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 14 (y), nadjeno Var y: int, 1, 0 
+INFO  13:56:02,591 - Pretraga na liniji 17 (p), nadjeno Var p: int, 4, 0 
+INFO  13:56:02,591 - Print calls = 0
+INFO  13:56:02,591 - Generating bytecode file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\izlaz.obj
+INFO  13:56:02,606 - Parsiranje uspesno zavrseno!

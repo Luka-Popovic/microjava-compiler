@@ -1,0 +1,35 @@
+program Program
+	int ab, ac, ad;
+	class A { 
+		int x ,y , z;
+		{
+			void a_meth() {	
+			print(4);
+			}
+			void b_meth(){
+			print(7);
+			}
+		}
+	}
+	class B extends A {
+		int m, n;
+		{
+			void bb_meth(){
+			print(1);
+			}
+		}
+	}
+
+{
+
+	void main() B b;{
+		
+		b = new B;
+		b.y = 2;
+		print(b.y);
+		b.a_meth();
+		b.bb_meth();
+		b.b_meth();
+	}
+
+}

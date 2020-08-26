@@ -1,0 +1,216 @@
+INFO  18:26:10,733 - Compiling source file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\test4.mj
+INFO  18:26:10,947 - #6 program
+INFO  18:26:10,947 - #42 MJProgram
+INFO  18:26:10,948 - #42 int
+INFO  18:26:10,952 - #42 x
+INFO  18:26:10,953 - #36 ;
+INFO  18:26:10,955 - #42 int
+INFO  18:26:10,956 - #42 y
+INFO  18:26:10,957 - #5 ,
+INFO  18:26:10,957 - #42 z
+INFO  18:26:10,957 - #10 [
+INFO  18:26:10,957 - #11 ]
+INFO  18:26:10,958 - #5 ,
+INFO  18:26:10,958 - #42 q
+INFO  18:26:10,958 - #5 ,
+INFO  18:26:10,959 - #42 p
+INFO  18:26:10,961 - #36 ;
+INFO  18:26:10,961 - #42 char
+INFO  18:26:10,962 - #42 h
+INFO  18:26:10,962 - #10 [
+INFO  18:26:10,962 - #11 ]
+INFO  18:26:10,963 - #36 ;
+INFO  18:26:10,963 - #7 {
+INFO  18:26:10,963 - #42 int
+INFO  18:26:10,966 - #42 k
+INFO  18:26:10,966 - #2 (
+INFO  18:26:10,969 - #42 int
+INFO  18:26:10,969 - #42 a
+INFO  18:26:10,969 - #5 ,
+INFO  18:26:10,970 - #42 int
+INFO  18:26:10,970 - #42 b
+INFO  18:26:10,971 - #3 )
+INFO  18:26:10,971 - #42 int
+INFO  18:26:10,974 - #42 x
+INFO  18:26:10,974 - #36 ;
+INFO  18:26:10,974 - #7 {
+INFO  18:26:10,975 - #42 x
+INFO  18:26:10,977 - #17 =
+INFO  18:26:10,977 - #42 a
+INFO  18:26:10,977 - #19 +
+INFO  18:26:10,978 - #41 10
+INFO  18:26:10,982 - #36 ;
+INFO  18:26:10,982 - #18 print
+INFO  18:26:10,983 - #2 (
+INFO  18:26:10,983 - #42 x
+INFO  18:26:10,984 - #3 )
+INFO  18:26:10,986 - #36 ;
+INFO  18:26:10,986 - #18 print
+INFO  18:26:10,986 - #2 (
+INFO  18:26:10,986 - #42 b
+INFO  18:26:10,987 - #3 )
+INFO  18:26:10,987 - #36 ;
+INFO  18:26:10,987 - #39 return
+INFO  18:26:10,987 - #41 0
+INFO  18:26:10,987 - #36 ;
+INFO  18:26:10,987 - #8 }
+INFO  18:26:10,988 - #42 int
+INFO  18:26:10,988 - #42 main
+INFO  18:26:10,988 - #2 (
+INFO  18:26:10,989 - #3 )
+INFO  18:26:10,990 - #7 {
+INFO  18:26:10,990 - #42 x
+INFO  18:26:10,991 - #17 =
+INFO  18:26:10,991 - #41 1
+INFO  18:26:10,991 - #36 ;
+INFO  18:26:10,991 - #42 y
+INFO  18:26:10,991 - #17 =
+INFO  18:26:10,992 - #41 2
+INFO  18:26:10,992 - #36 ;
+INFO  18:26:10,992 - #42 q
+INFO  18:26:10,992 - #17 =
+INFO  18:26:10,992 - #41 4
+INFO  18:26:10,992 - #36 ;
+INFO  18:26:10,992 - #42 p
+INFO  18:26:10,993 - #17 =
+INFO  18:26:10,993 - #41 0
+INFO  18:26:10,993 - #36 ;
+INFO  18:26:10,993 - #27 if
+INFO  18:26:10,993 - #2 (
+INFO  18:26:10,994 - #42 x
+INFO  18:26:10,994 - #29 <
+INFO  18:26:10,994 - #42 y
+INFO  18:26:10,997 - #24 &&
+INFO  18:26:10,998 - #41 1
+INFO  18:26:10,998 - #29 <
+INFO  18:26:10,998 - #41 2
+INFO  18:26:10,999 - #25 ||
+INFO  18:26:10,999 - #41 1
+INFO  18:26:10,999 - #32 >
+INFO  18:26:11,000 - #41 0
+INFO  18:26:11,002 - #3 )
+INFO  18:26:11,002 - #27 if
+INFO  18:26:11,002 - #2 (
+INFO  18:26:11,002 - #42 x
+INFO  18:26:11,003 - #32 >
+INFO  18:26:11,003 - #42 q
+INFO  18:26:11,003 - #24 &&
+INFO  18:26:11,003 - #41 1
+INFO  18:26:11,003 - #29 <
+INFO  18:26:11,004 - #41 2
+INFO  18:26:11,004 - #25 ||
+INFO  18:26:11,004 - #41 1
+INFO  18:26:11,004 - #29 <
+INFO  18:26:11,004 - #41 0
+INFO  18:26:11,005 - #3 )
+INFO  18:26:11,005 - #42 p
+INFO  18:26:11,005 - #17 =
+INFO  18:26:11,005 - #41 1
+INFO  18:26:11,006 - #36 ;
+INFO  18:26:11,006 - #26 else
+INFO  18:26:11,006 - #27 if
+INFO  18:26:11,006 - #2 (
+INFO  18:26:11,007 - #42 x
+INFO  18:26:11,007 - #29 <
+INFO  18:26:11,007 - #42 y
+INFO  18:26:11,007 - #24 &&
+INFO  18:26:11,007 - #41 1
+INFO  18:26:11,007 - #29 <
+INFO  18:26:11,008 - #41 2
+INFO  18:26:11,008 - #25 ||
+INFO  18:26:11,008 - #41 1
+INFO  18:26:11,008 - #32 >
+INFO  18:26:11,008 - #41 0
+INFO  18:26:11,008 - #3 )
+INFO  18:26:11,009 - #42 p
+INFO  18:26:11,009 - #17 =
+INFO  18:26:11,009 - #41 2
+INFO  18:26:11,009 - #36 ;
+INFO  18:26:11,010 - #26 else
+INFO  18:26:11,010 - #42 p
+INFO  18:26:11,010 - #17 =
+INFO  18:26:11,010 - #41 3
+INFO  18:26:11,010 - #36 ;
+INFO  18:26:11,010 - #42 z
+INFO  18:26:11,011 - #17 =
+INFO  18:26:11,011 - #16 new
+INFO  18:26:11,011 - #42 int
+INFO  18:26:11,012 - #10 [
+INFO  18:26:11,012 - #41 2
+INFO  18:26:11,012 - #11 ]
+INFO  18:26:11,012 - #36 ;
+INFO  18:26:11,013 - #42 z
+INFO  18:26:11,013 - #10 [
+INFO  18:26:11,013 - #41 0
+INFO  18:26:11,013 - #11 ]
+INFO  18:26:11,014 - #17 =
+INFO  18:26:11,014 - #41 4
+INFO  18:26:11,014 - #36 ;
+INFO  18:26:11,014 - #18 print
+INFO  18:26:11,015 - #2 (
+INFO  18:26:11,015 - #42 z
+INFO  18:26:11,015 - #10 [
+INFO  18:26:11,015 - #41 0
+INFO  18:26:11,015 - #11 ]
+INFO  18:26:11,016 - #3 )
+INFO  18:26:11,016 - #36 ;
+INFO  18:26:11,016 - #42 z
+INFO  18:26:11,017 - #10 [
+INFO  18:26:11,017 - #41 0
+INFO  18:26:11,017 - #11 ]
+INFO  18:26:11,018 - #14 ++
+INFO  18:26:11,018 - #36 ;
+INFO  18:26:11,018 - #18 print
+INFO  18:26:11,019 - #2 (
+INFO  18:26:11,019 - #42 z
+INFO  18:26:11,019 - #10 [
+INFO  18:26:11,020 - #41 0
+INFO  18:26:11,020 - #11 ]
+INFO  18:26:11,020 - #3 )
+INFO  18:26:11,021 - #36 ;
+INFO  18:26:11,021 - #18 print
+INFO  18:26:11,021 - #2 (
+INFO  18:26:11,022 - #42 p
+INFO  18:26:11,022 - #3 )
+INFO  18:26:11,022 - #36 ;
+INFO  18:26:11,023 - #39 return
+INFO  18:26:11,023 - #41 0
+INFO  18:26:11,023 - #36 ;
+INFO  18:26:11,024 - #8 }
+INFO  18:26:11,024 - #8 }
+INFO  18:26:11,048 - Deklarisana promenljiva x na liniji 2
+INFO  18:26:11,049 - Deklarisana promenljiva y na liniji 2
+INFO  18:26:11,049 - Deklarisana nizovna promenljiva z gde su elementi niza tipa int, na liniji 12
+INFO  18:26:11,049 - Deklarisana promenljiva q na liniji 12
+INFO  18:26:11,053 - Deklarisana promenljiva p na liniji 2
+INFO  18:26:11,058 - Deklarisana nizovna promenljiva h gde su elementi niza tipa char, na liniji 3
+INFO  18:26:11,063 - Obradjuje se funkcija k ciji je povratni tip int, na liniji 6
+INFO  18:26:11,070 - Pronadjen formalni parametar int a, na liniji 6
+INFO  18:26:11,070 - Pronadjen formalni parametar int b, na liniji 6
+INFO  18:26:11,071 - Deklarisana promenljiva x na liniji 6
+INFO  18:26:11,071 - Pretraga na liniji 7 (x), nadjeno Var x: int, 2, 1 
+INFO  18:26:11,071 - Pretraga na liniji 7 (a), nadjeno Var a: int, 0, 1 
+INFO  18:26:11,073 - Pretraga na liniji 8 (x), nadjeno Var x: int, 2, 1 
+INFO  18:26:11,075 - Pretraga na liniji 9 (b), nadjeno Var b: int, 1, 1 
+INFO  18:26:11,076 - Obradjuje se funkcija main ciji je povratni tip int, na liniji 15
+INFO  18:26:11,076 - Pretraga na liniji 16 (x), nadjeno Var x: int, 0, 0 
+INFO  18:26:11,076 - Pretraga na liniji 17 (y), nadjeno Var y: int, 1, 0 
+INFO  18:26:11,077 - Pretraga na liniji 18 (q), nadjeno Var q: int, 3, 0 
+INFO  18:26:11,077 - Pretraga na liniji 19 (p), nadjeno Var p: int, 4, 0 
+INFO  18:26:11,077 - Pretraga na liniji 20 (x), nadjeno Var x: int, 0, 0 
+INFO  18:26:11,078 - Pretraga na liniji 20 (y), nadjeno Var y: int, 1, 0 
+INFO  18:26:11,078 - Pretraga na liniji 21 (x), nadjeno Var x: int, 0, 0 
+INFO  18:26:11,078 - Pretraga na liniji 21 (q), nadjeno Var q: int, 3, 0 
+INFO  18:26:11,078 - Pretraga na liniji 21 (p), nadjeno Var p: int, 4, 0 
+INFO  18:26:11,079 - Pretraga na liniji 23 (x), nadjeno Var x: int, 0, 0 
+INFO  18:26:11,079 - Pretraga na liniji 23 (y), nadjeno Var y: int, 1, 0 
+INFO  18:26:11,079 - Pretraga na liniji 23 (p), nadjeno Var p: int, 4, 0 
+INFO  18:26:11,079 - Pretraga na liniji 24 (p), nadjeno Var p: int, 4, 0 
+INFO  18:26:11,079 - Pretraga na liniji 25 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:26:11,080 - Pretraga na liniji 27 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:26:11,080 - Pretraga na liniji 28 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:26:11,080 - Pretraga na liniji 29 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:26:11,081 - Pretraga na liniji 31 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:26:11,081 - Pretraga na liniji 32 (p), nadjeno Var p: int, 4, 0 
+INFO  18:26:11,082 - Generating bytecode file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\izlaz.obj
+INFO  18:26:11,097 - Parsiranje uspesno zavrseno!

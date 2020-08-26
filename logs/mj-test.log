@@ -1,0 +1,256 @@
+INFO  18:40:09,153 - Compiling source file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\test4.mj
+INFO  18:40:09,262 - #6 program
+INFO  18:40:09,263 - #42 MJProgram
+INFO  18:40:09,263 - #42 int
+INFO  18:40:09,265 - #42 x
+INFO  18:40:09,266 - #36 ;
+INFO  18:40:09,268 - #42 int
+INFO  18:40:09,269 - #42 y
+INFO  18:40:09,269 - #5 ,
+INFO  18:40:09,269 - #42 z
+INFO  18:40:09,269 - #10 [
+INFO  18:40:09,270 - #11 ]
+INFO  18:40:09,270 - #5 ,
+INFO  18:40:09,270 - #42 q
+INFO  18:40:09,271 - #5 ,
+INFO  18:40:09,271 - #42 p
+INFO  18:40:09,273 - #36 ;
+INFO  18:40:09,273 - #42 char
+INFO  18:40:09,274 - #42 h
+INFO  18:40:09,274 - #10 [
+INFO  18:40:09,274 - #11 ]
+INFO  18:40:09,275 - #36 ;
+INFO  18:40:09,275 - #7 {
+INFO  18:40:09,276 - #42 int
+INFO  18:40:09,277 - #42 k
+INFO  18:40:09,277 - #2 (
+INFO  18:40:09,278 - #42 int
+INFO  18:40:09,279 - #42 a
+INFO  18:40:09,279 - #5 ,
+INFO  18:40:09,280 - #42 int
+INFO  18:40:09,280 - #42 b
+INFO  18:40:09,280 - #3 )
+INFO  18:40:09,281 - #42 int
+INFO  18:40:09,283 - #42 x
+INFO  18:40:09,283 - #36 ;
+INFO  18:40:09,283 - #7 {
+INFO  18:40:09,284 - #42 x
+INFO  18:40:09,285 - #17 =
+INFO  18:40:09,285 - #42 a
+INFO  18:40:09,285 - #19 +
+INFO  18:40:09,286 - #41 10
+INFO  18:40:09,288 - #36 ;
+INFO  18:40:09,288 - #18 print
+INFO  18:40:09,289 - #2 (
+INFO  18:40:09,289 - #42 x
+INFO  18:40:09,289 - #3 )
+INFO  18:40:09,290 - #36 ;
+INFO  18:40:09,291 - #18 print
+INFO  18:40:09,291 - #2 (
+INFO  18:40:09,291 - #42 b
+INFO  18:40:09,291 - #3 )
+INFO  18:40:09,291 - #36 ;
+INFO  18:40:09,292 - #39 return
+INFO  18:40:09,292 - #41 0
+INFO  18:40:09,292 - #36 ;
+INFO  18:40:09,292 - #8 }
+INFO  18:40:09,292 - #42 int
+INFO  18:40:09,293 - #42 main
+INFO  18:40:09,293 - #2 (
+INFO  18:40:09,293 - #3 )
+INFO  18:40:09,294 - #7 {
+INFO  18:40:09,294 - #42 x
+INFO  18:40:09,295 - #17 =
+INFO  18:40:09,295 - #41 1
+INFO  18:40:09,295 - #36 ;
+INFO  18:40:09,295 - #42 y
+INFO  18:40:09,296 - #17 =
+INFO  18:40:09,296 - #41 2
+INFO  18:40:09,296 - #36 ;
+INFO  18:40:09,296 - #42 q
+INFO  18:40:09,297 - #17 =
+INFO  18:40:09,297 - #41 4
+INFO  18:40:09,297 - #36 ;
+INFO  18:40:09,297 - #42 p
+INFO  18:40:09,297 - #17 =
+INFO  18:40:09,298 - #41 0
+INFO  18:40:09,298 - #36 ;
+INFO  18:40:09,298 - #27 if
+INFO  18:40:09,298 - #2 (
+INFO  18:40:09,299 - #42 x
+INFO  18:40:09,299 - #29 <
+INFO  18:40:09,299 - #42 y
+INFO  18:40:09,301 - #24 &&
+INFO  18:40:09,302 - #41 1
+INFO  18:40:09,302 - #29 <
+INFO  18:40:09,302 - #41 2
+INFO  18:40:09,303 - #25 ||
+INFO  18:40:09,303 - #41 1
+INFO  18:40:09,303 - #32 >
+INFO  18:40:09,303 - #41 0
+INFO  18:40:09,305 - #3 )
+INFO  18:40:09,305 - #27 if
+INFO  18:40:09,305 - #2 (
+INFO  18:40:09,305 - #42 x
+INFO  18:40:09,305 - #32 >
+INFO  18:40:09,306 - #42 q
+INFO  18:40:09,306 - #24 &&
+INFO  18:40:09,306 - #41 1
+INFO  18:40:09,306 - #29 <
+INFO  18:40:09,306 - #41 2
+INFO  18:40:09,306 - #25 ||
+INFO  18:40:09,307 - #41 1
+INFO  18:40:09,307 - #29 <
+INFO  18:40:09,307 - #41 0
+INFO  18:40:09,307 - #3 )
+INFO  18:40:09,307 - #42 p
+INFO  18:40:09,307 - #17 =
+INFO  18:40:09,308 - #41 1
+INFO  18:40:09,308 - #36 ;
+INFO  18:40:09,308 - #26 else
+INFO  18:40:09,308 - #27 if
+INFO  18:40:09,308 - #2 (
+INFO  18:40:09,309 - #42 x
+INFO  18:40:09,309 - #29 <
+INFO  18:40:09,309 - #42 y
+INFO  18:40:09,309 - #24 &&
+INFO  18:40:09,309 - #41 1
+INFO  18:40:09,309 - #29 <
+INFO  18:40:09,310 - #41 2
+INFO  18:40:09,310 - #25 ||
+INFO  18:40:09,310 - #41 1
+INFO  18:40:09,310 - #32 >
+INFO  18:40:09,310 - #41 0
+INFO  18:40:09,310 - #3 )
+INFO  18:40:09,311 - #42 p
+INFO  18:40:09,311 - #17 =
+INFO  18:40:09,311 - #41 2
+INFO  18:40:09,311 - #36 ;
+INFO  18:40:09,312 - #26 else
+INFO  18:40:09,312 - #42 p
+INFO  18:40:09,312 - #17 =
+INFO  18:40:09,312 - #41 3
+INFO  18:40:09,312 - #36 ;
+INFO  18:40:09,312 - #42 z
+INFO  18:40:09,313 - #17 =
+INFO  18:40:09,313 - #16 new
+INFO  18:40:09,313 - #42 int
+INFO  18:40:09,314 - #10 [
+INFO  18:40:09,314 - #41 2
+INFO  18:40:09,314 - #11 ]
+INFO  18:40:09,314 - #36 ;
+INFO  18:40:09,314 - #42 z
+INFO  18:40:09,315 - #10 [
+INFO  18:40:09,315 - #41 0
+INFO  18:40:09,315 - #11 ]
+INFO  18:40:09,315 - #17 =
+INFO  18:40:09,316 - #41 4
+INFO  18:40:09,316 - #36 ;
+INFO  18:40:09,316 - #18 print
+INFO  18:40:09,316 - #2 (
+INFO  18:40:09,316 - #42 z
+INFO  18:40:09,317 - #10 [
+INFO  18:40:09,317 - #41 0
+INFO  18:40:09,317 - #11 ]
+INFO  18:40:09,317 - #3 )
+INFO  18:40:09,317 - #36 ;
+INFO  18:40:09,317 - #42 z
+INFO  18:40:09,317 - #10 [
+INFO  18:40:09,318 - #41 0
+INFO  18:40:09,318 - #11 ]
+INFO  18:40:09,318 - #14 ++
+INFO  18:40:09,318 - #36 ;
+INFO  18:40:09,318 - #18 print
+INFO  18:40:09,318 - #2 (
+INFO  18:40:09,319 - #42 z
+INFO  18:40:09,319 - #10 [
+INFO  18:40:09,319 - #41 0
+INFO  18:40:09,319 - #11 ]
+INFO  18:40:09,319 - #3 )
+INFO  18:40:09,319 - #36 ;
+INFO  18:40:09,319 - #18 print
+INFO  18:40:09,320 - #2 (
+INFO  18:40:09,320 - #42 p
+INFO  18:40:09,320 - #3 )
+INFO  18:40:09,320 - #36 ;
+INFO  18:40:09,320 - #18 print
+INFO  18:40:09,321 - #2 (
+INFO  18:40:09,321 - #42 eol
+INFO  18:40:09,321 - #3 )
+INFO  18:40:09,321 - #36 ;
+INFO  18:40:09,321 - #27 if
+INFO  18:40:09,321 - #2 (
+INFO  18:40:09,322 - #45 false
+INFO  18:40:09,322 - #3 )
+INFO  18:40:09,322 - #7 {
+INFO  18:40:09,322 - #18 print
+INFO  18:40:09,322 - #2 (
+INFO  18:40:09,323 - #43 'o'
+INFO  18:40:09,323 - #3 )
+INFO  18:40:09,323 - #36 ;
+INFO  18:40:09,323 - #18 print
+INFO  18:40:09,323 - #2 (
+INFO  18:40:09,324 - #43 'k'
+INFO  18:40:09,325 - #3 )
+INFO  18:40:09,325 - #36 ;
+INFO  18:40:09,325 - #8 }
+INFO  18:40:09,325 - #26 else
+INFO  18:40:09,326 - #7 {
+INFO  18:40:09,326 - #18 print
+INFO  18:40:09,326 - #2 (
+INFO  18:40:09,326 - #43 'c'
+INFO  18:40:09,326 - #3 )
+INFO  18:40:09,326 - #36 ;
+INFO  18:40:09,326 - #18 print
+INFO  18:40:09,326 - #2 (
+INFO  18:40:09,327 - #43 'a'
+INFO  18:40:09,327 - #3 )
+INFO  18:40:09,327 - #36 ;
+INFO  18:40:09,327 - #18 print
+INFO  18:40:09,327 - #2 (
+INFO  18:40:09,327 - #43 'o'
+INFO  18:40:09,327 - #3 )
+INFO  18:40:09,327 - #36 ;
+INFO  18:40:09,328 - #8 }
+INFO  18:40:09,328 - #39 return
+INFO  18:40:09,328 - #41 0
+INFO  18:40:09,328 - #36 ;
+INFO  18:40:09,328 - #8 }
+INFO  18:40:09,329 - #8 }
+INFO  18:40:09,351 - Deklarisana promenljiva x na liniji 2
+INFO  18:40:09,351 - Deklarisana promenljiva y na liniji 2
+INFO  18:40:09,351 - Deklarisana nizovna promenljiva z gde su elementi niza tipa int, na liniji 12
+INFO  18:40:09,352 - Deklarisana promenljiva q na liniji 12
+INFO  18:40:09,352 - Deklarisana promenljiva p na liniji 2
+INFO  18:40:09,352 - Deklarisana nizovna promenljiva h gde su elementi niza tipa char, na liniji 3
+INFO  18:40:09,352 - Obradjuje se funkcija k ciji je povratni tip int, na liniji 6
+INFO  18:40:09,353 - Pronadjen formalni parametar int a, na liniji 6
+INFO  18:40:09,353 - Pronadjen formalni parametar int b, na liniji 6
+INFO  18:40:09,353 - Deklarisana promenljiva x na liniji 6
+INFO  18:40:09,354 - Pretraga na liniji 7 (x), nadjeno Var x: int, 2, 1 
+INFO  18:40:09,354 - Pretraga na liniji 7 (a), nadjeno Var a: int, 0, 1 
+INFO  18:40:09,354 - Pretraga na liniji 8 (x), nadjeno Var x: int, 2, 1 
+INFO  18:40:09,355 - Pretraga na liniji 9 (b), nadjeno Var b: int, 1, 1 
+INFO  18:40:09,355 - Obradjuje se funkcija main ciji je povratni tip int, na liniji 15
+INFO  18:40:09,355 - Pretraga na liniji 16 (x), nadjeno Var x: int, 0, 0 
+INFO  18:40:09,356 - Pretraga na liniji 17 (y), nadjeno Var y: int, 1, 0 
+INFO  18:40:09,356 - Pretraga na liniji 18 (q), nadjeno Var q: int, 3, 0 
+INFO  18:40:09,356 - Pretraga na liniji 19 (p), nadjeno Var p: int, 4, 0 
+INFO  18:40:09,357 - Pretraga na liniji 20 (x), nadjeno Var x: int, 0, 0 
+INFO  18:40:09,357 - Pretraga na liniji 20 (y), nadjeno Var y: int, 1, 0 
+INFO  18:40:09,357 - Pretraga na liniji 21 (x), nadjeno Var x: int, 0, 0 
+INFO  18:40:09,358 - Pretraga na liniji 21 (q), nadjeno Var q: int, 3, 0 
+INFO  18:40:09,359 - Pretraga na liniji 21 (p), nadjeno Var p: int, 4, 0 
+INFO  18:40:09,359 - Pretraga na liniji 23 (x), nadjeno Var x: int, 0, 0 
+INFO  18:40:09,359 - Pretraga na liniji 23 (y), nadjeno Var y: int, 1, 0 
+INFO  18:40:09,360 - Pretraga na liniji 23 (p), nadjeno Var p: int, 4, 0 
+INFO  18:40:09,360 - Pretraga na liniji 24 (p), nadjeno Var p: int, 4, 0 
+INFO  18:40:09,360 - Pretraga na liniji 25 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:40:09,361 - Pretraga na liniji 27 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:40:09,361 - Pretraga na liniji 28 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:40:09,361 - Pretraga na liniji 29 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:40:09,362 - Pretraga na liniji 31 (z), nadjeno Var z: Arr of int, 2, 0 
+INFO  18:40:09,362 - Pretraga na liniji 32 (p), nadjeno Var p: int, 4, 0 
+INFO  18:40:09,362 - Pretraga na liniji 34 (eol), nadjeno Con eol: char, 10, 0 
+INFO  18:40:09,364 - Generating bytecode file: C:\Users\Luka\Desktop\pp1domaci\workspace\MJCompiler\test\izlaz.obj
+INFO  18:40:09,389 - Parsiranje uspesno zavrseno!
